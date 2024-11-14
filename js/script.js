@@ -1,3 +1,11 @@
+$(document).ready(function() {
+    $('.navbar-toggler').on('click', function() {
+        $('.navbar-collapse').toggleClass('sidebar'); // Toggle 'sidebar' class to show or hide it
+    });
+});
+
+  
+
 if ($(window).width() <= 768){	
     $('.footer-links-wrapper').addClass("someClass");
 }else{
