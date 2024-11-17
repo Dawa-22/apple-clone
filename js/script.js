@@ -6,6 +6,7 @@ $(document).ready(function() {
 
   
 
+// Footer collapse functionality 
 if ($(window).width() <= 768){	
     $('.footer-links-wrapper').addClass("someClass");
 }else{
@@ -19,7 +20,7 @@ $(window).on('resize', function(event){
         $('.footer-links-wrapper ul').show();
     }	
 });
-// Footer collapse functionality 
+
 $(document).on("click", ".someClass h3", function(){
     $(this).next('ul').slideToggle();
     $(this).toggleClass("expanded");
